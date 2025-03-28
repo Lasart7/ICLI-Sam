@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BudgetUp</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="transfer">Transfer</string>
+    <string name="current_date">Date 26/03/2025 (Wed) 16:51</string>
+    <string name="amount_hint">Amount</string>
+    <string name="note_hint">Note</string>
+    <string name="description_hint">Description</string>
+    <string name="save_button">Save</string>
+    <string name="continue_button">Continue</string>
+</resources>

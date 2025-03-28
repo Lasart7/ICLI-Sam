@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/homeFragment">
+
+        <!-- Home Fragment -->
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.yourpackage.HomeFragment"
+            android:label="Home"
+            tools:layout="@layout/fragment_home">
+
+            <action
+                android:id="@+id/action_home_to_addTransaction"
+                app:destination="@id/addTransactionFragment"/>
+        </fragment>
+
+        <!-- Accounts Fragment -->
+        <fragment
+            android:id="@+id/accountsFragment"
+            android:name="com.yourpackage.AccountsFragment"
+            android:label="Accounts"
+            tools:layout="@layout/fragment_accounts"/>
+
+        <!-- Stats Fragment -->
+        <fragment
+            android:id="@+id/statsFragment"
+            android:name="com.yourpackage.StatsFragment"
+            android:label="Statistics"
+            tools:layout="@layout/fragment_stats"/>
+
+        <!-- Settings Fragment -->
+        <fragment
+            android:id="@+id/settingsFragment"
+            android:name="com.yourpackage.SettingsFragment"
+            android:label="Settings"
+            tools:layout="@layout/fragment_settings"/>
+
+        <!-- Add Transaction Activity (if you want it in the graph) -->
+        <activity
+            android:id="@+id/addTransactionFragment"
+            android:name="com.yourpackage.AddTransactionActivity"
+            android:label="Add Transaction"/>
+    </navigation>
